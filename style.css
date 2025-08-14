@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #032212;
+    color: white;  
+     
+}
+   
+#navbar{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    
+}
+/* navbar */
+.nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    background-color: rgba(28, 46, 29, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 50px;
+    padding: 10px 25px;
+    width: fit-content;
+    gap: 300px;
+    
+}
+.logo-circle{
+    background-color: #bef264;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: white;
+}
+/* button */
+.btn-primary{
+    background-color: #bef264;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    background-color: #a3e635;
+}
+.btn-outline{
+    border: 2px solid #bef264;
+    color: #bef264;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.btn-outline:hover{
+    background-color: #bef264;
+    color: black;
+}
+/* hero section */
+.hero{ 
+    color: white;
+    text-align: center;
+   padding: 150px 20px 500px
+   
+}
+.hero h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.hero p{
+    color: #bbb;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+.hero-button{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+}
+.dashboard-section{
+   background-color: #fff;
+    padding: 50px 20px;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.dashboard-container{
+    position: relative;
+    margin-top: -400px;
+    display: inline-block;
+    background: white
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.dashboard-container img{
+    width: 100%;
+    height: 60%;
+    /* display: block; */
+    
+}
